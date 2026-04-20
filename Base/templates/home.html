@@ -1,0 +1,719 @@
+{% load static%}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portf </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>`
+    
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+
+    <li><a href="#home" class="t-white roboto">
+        Home <i class="fa-solid fa-house"></i>
+    </a></li>
+
+    <li><a href="#about" class="t-white roboto">
+        About <i class="fa-solid fa-user"></i>
+    </a></li>
+
+    <li><a href="#skills" class="t-white roboto">
+        Skills <i class="fa-solid fa-code"></i>
+    </a></li>
+
+    <li><a href="#experience" class="t-white roboto">
+        Experience <i class="fa-solid fa-briefcase"></i>
+    </a></li>
+
+    <!-- Certificates + Achievements -->
+    <li><a href="#certificates" class="t-white roboto">
+        Certificates <i class="fa-solid fa-award"></i>
+    </a></li>
+
+    <!-- GROUP -->
+    <li><a href="#projects" class="t-white roboto">
+        Projects <i class="fas fa-project-diagram"></i>
+    </a></li>
+
+    <!-- UI/UX + Canva -->
+    <li><a href="#uiux" class="t-white roboto">
+        Designs <i class="fa-solid fa-palette"></i>
+    </a></li>
+
+    <li><a href="#Contact" class="t-white roboto">
+        Contact <i class="fa-solid fa-rocket"></i>
+    </a></li>
+
+</ul>
+        </div>
+    </nav>
+
+        
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Kamini Parmar</h1>
+                <h4 class="poppinss">B.Tech IT Student</h4>
+                <a href="{% static 'images/resume.png' %}"  target="_blank">
+                    <button class="btn poppins">Resume</button></a>
+                    
+                <a class="btn live poppins" id="hireme" href="https://wa.me/918866413592?text=Hello%20Kamini%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20connect"
+                    target="_blank">Contact Me</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+               
+                <img src="{% static 'images/2.png'%}" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        
+        <h1 class="t-center my-2 t-white f-2"> .</h1>
+        <h2 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/dog.png'%}" alt="" style="width: 60%;">
+            </div>
+
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    
+                    <h1 class="t-white m-b-1 poppins">Kamini Parmar</h1>
+
+                    <p class="t-white poppins">I am an Information Technology student currently pursuing B.Tech (4th Semester) at Parul University with a strong interest in web development and UI/UX design. I enjoy building responsive and user-friendly web applications.
+<p class="t-white poppins">I have practical experience through projects using Django and modern web technologies, and I am continuously working to enhance my skills and grow as a developer. I am also passionate about creating clean and visually appealing designs that improve user experience.</p>                                                          
+<a class="btn" 
+   href="https://wa.me/918866413592?text=Hello%20Kamini%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20connect" 
+   target="_blank">
+   Hire Me
+</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+ <!-- Skills Section --> 
+<section id="skills">
+    <h1 class="t-center my-2 t-white f-2">Skills</h1>
+
+    <div class="services-container flex s-around">
+
+        <!-- LEFT IMAGE -->
+        <div class="skills-left flex s-center items-center">
+            <img src="{% static 'images/pro.png' %}" alt="">
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="skills-right flex">
+
+            <!-- TECH SKILLS -->
+            <div class="skill-box">
+                <h2 class="t-white skill-title">Technical Skills</h2>
+                <div class="tech-line"></div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Web Development</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar wd"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>UI/UX</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar uiux"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Canva</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar canva"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Data Entry</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar de"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Python Django</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar pyd"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>HTML & CSS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar hc"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOFT SKILLS -->
+            <div class="skill-box">
+                <h2 class="t-white skill-title">Soft Skills</h2>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Communication</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar soft1"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Teamwork</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar soft2"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Creativity</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar soft3"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Time Management</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar soft4"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--experience-->
+
+<!-- ===== EXPERIENCE SECTION ===== -->
+<section id="experience">
+    <h1 class="t-center my-2 t-white f-2">Experience</h1>
+
+    <!-- MAIN INTERNSHIP -->
+    <div class="main-exp-card">
+        <h2>IT Intern</h2>
+        <p><b>Company:</b> Gujarat Alkalies and Chemicals Limited (GACL)</p>
+        <p><b>Department:</b> Management Services</p>
+        <p><b>Duration:</b> 9 July 2024 - 5 Aug 2024</p>
+
+        <p class="exp-desc">
+            Worked on SQL queries, automation tasks and observed IT operations.
+        </p>
+
+        <button class="cert-btn"
+        onclick="openCert('{% static 'images/internship.jpg' %}')">
+        View Certificate</button>
+    </div>
+
+    <!-- SUB INTERNSHIPS -->
+    <div class="sub-exp-container">
+
+        <div class="sub-exp-card">
+            <p><b>Company:</b> Bakti Ki Pathshala Foundation</p>
+            <p><b>Role:</b> Social Entrepreneur</p>
+            <p><b>Date:</b> 01-07-2025</p>
+            <button class="cert-btn"
+            onclick="openCert('{% static 'images/i7.jpg' %}')">View</button>
+        </div>
+
+        <div class="sub-exp-card">
+            <p><b>Company:</b> Tare Zameen Foundation</p>
+            <p><b>Role:</b> Fundraising</p>
+            <p><b>Date:</b> 03-07-2024</p>
+            <button class="cert-btn"
+            onclick="openCert('{% static 'images/i6.jpg' %}')">View</button>
+        </div>
+
+        <div class="sub-exp-card">
+            <p><b>Company:</b> She Can Foundation</p>
+            <p><b>Role:</b> Social Entrepreneur</p>
+            <p><b>Date:</b> 03-01-2024</p>
+            <button class="cert-btn"
+            onclick="openCert('{% static 'images/i5.jpg' %}')">View</button>
+        </div>
+
+        <div class="sub-exp-card">
+            <p><b>Company:</b> Amigos Foundation</p>
+            <p><b>Role:</b> Virtual Volunteer</p>
+            <p><b>Date:</b> 03-02-2024</p>
+            <button class="cert-btn"
+            onclick="openCert('{% static 'images/i4.jpg' %}')">View</button>
+        </div>
+
+        <div class="sub-exp-card">
+            <p><b>Company:</b> She Can Foundation</p>
+            <p><b>Role:</b> Social Entrepreneurship</p>
+            <p><b>Date:</b> 31-08-2025</p>
+            <button class="cert-btn"
+            onclick="openCert('{% static 'images/i3.jpg' %}')">View</button>
+        </div>
+
+        <div class="sub-exp-card">
+            <p><b>Company:</b> Harami Pahchan NGO</p>
+            <p><b>Role:</b> Social Entrepreneur</p>
+            <p><b>Date:</b> 26-07-2023</p>
+            <button class="cert-btn"
+            onclick="openCert('{% static 'images/i2.jpg' %}')">View</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== MODAL (IMPORTANT) ===== -->
+<div id="certModal" class="cert-modal">
+    <span class="close" onclick="closeCert()">&times;</span>
+    <img class="cert-img" id="certImg">
+</div>
+
+<!-- ===== JS (FIXED) ===== -->
+<script>
+function openCert(img) {
+    document.getElementById("certModal").style.display = "block";
+    document.getElementById("certImg").src = img; // ✅ correct
+}
+
+function closeCert() {
+    document.getElementById("certModal").style.display = "none";
+}
+
+// click outside to close
+window.onclick = function(e) {
+    let modal = document.getElementById("certModal");
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- Certificates Section -->
+
+<section id="certificates">
+    <h1 class="t-center my-2 t-white f-2">Certificates</h1>
+
+    <div class="cert-grid">
+
+        <!-- 1 -->
+        <div class="cert-card">
+            <img src="{% static 'images/c aad.jpg' %}" alt="">
+            <p>Android Application Development</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="cert-card">
+            <img src="{% static 'images/c joi h.jpg' %}" alt="">
+            <p>Java Programming in Hindi</p>
+        </div>
+
+        <!-- 3 (WITH LINK BUTTON) -->
+        <div class="cert-card">
+            <img src="{% static 'images/c jo.PNG' %}" alt="">
+            <p>Introduction to Java & OOP</p>
+
+            <a href="https://www.linkedin.com/posts/kamini-parmar-0443a6282_introduction-to-java-and-object-oriented-activity-7382052289143984128-y72-"
+               target="_blank" class="btn">
+               View
+            </a>
+        </div>
+
+        <!-- 4 (WITH LINK BUTTON) -->
+        <div class="cert-card">
+            <img src="{% static 'images/cai.PNG' %}" alt="">
+            <p>AI for Business Application</p>
+
+            <a href="https://www.linkedin.com/posts/kamini-parmar-0443a6282_al-for-business-applications-activity-7382052801486409728-Bmn-"
+               target="_blank" class="btn">
+               View
+            </a>
+        </div>
+
+        <!-- 5 -->
+        <div class="cert-card">
+            <img src="{% static 'images/c pfb.jpg' %}" alt="">
+            <p>PHP for Beginners</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="cert-card">
+            <img src="{% static 'images/c veb.jpg' %}" alt="">
+            <p>Video Editing Basics</p>
+        </div>
+
+        <!-- 7 -->
+        <div class="cert-card">
+            <img src="{% static 'images/c smm.jpg' %}" alt="">
+            <p>Social Media Marketing</p>
+        </div>
+
+        <!-- 8 -->
+        <div class="cert-card">
+            <img src="{% static 'images/c vso.jpg' %}" alt="">
+            <p>Visual Studio Online</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== Achievements Section ===== -->
+<section id="achievements">
+    <h1 class="t-center my-2 t-white f-2">Achievements</h1>
+
+    <div class="achieve-box">
+
+        <!-- CARD 1 -->
+        <div class="ach-card">
+            <h3>Flag Hosting Ceremony</h3>
+            <p>
+                Honored to perform Flag Hoisting on Republic Day 2026 🇮🇳  
+                as Chief Guest at Raipura Primary School.  
+                A proud moment of responsibility and national pride.
+            </p>
+
+            <a href="https://www.linkedin.com/posts/kamini-parmar-0443a6282_honored-to-perform-flag-hoisting-on-republic-activity-7425476803009523712-RW7H"
+               target="_blank" class="btn m-top">
+               View Details
+            </a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="ach-card">
+            <h3>Proud Recognition</h3>
+            <p>
+                Invited and recognized as a former student by  
+                Raipura Shreshth School (PM SHRI), Gujarat.  
+                A meaningful and proud moment.
+            </p>
+
+            <a href="https://www.linkedin.com/posts/kamini-parmar-0443a6282_im-happy-to-share-a-proud-moment-of-being-activity-7425462666812534784-j3WC"
+               target="_blank" class="btn m-top">
+               View Details
+            </a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="ach-card">
+            <h3>School Achievement</h3>
+            <p>
+                A memorable recognition moment from my school life  
+                that continues to motivate me in my journey.
+            </p>
+
+            <a href="https://www.linkedin.com/posts/kamini-parmar-0443a6282_im-happy-to-share-a-proud-memory-from-my-activity-7425462280005500928-Anix"
+               target="_blank" class="btn m-top">
+               View Details
+            </a>
+        </div>
+
+    </div>
+</section>
+   
+<!-- ===== Projects Section ===== -->
+<section id="projects">
+    <h1 class="t-center my-2 t-white f-2">Projects</h1>
+
+    <div class="project-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <h3>Book App (Final Year Project)</h3>
+
+            <p>
+                E-Book application where users can sign up, log in, upload books and read online.
+                Categories include fiction, horror, and children's books. Secure login with JWT.
+            </p>
+
+            <p class="tech">
+                <b>Tech:</b> HTML, CSS, JS, React, Node, Express, MongoDB
+            </p>
+
+            <div class="btns">
+                <a href="https://github.com/kamini569" target="_blank" class="btn">GitHub</a>
+            </div>
+        </div>
+
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <h3>Harshidhi Water Supply</h3>
+
+            <p>
+                A Django-based mini project for managing water supply operations and records.
+            </p>
+
+            <p class="tech">
+                <b>Tech:</b> Python, Django, HTML, CSS
+            </p>
+
+            <div class="btns">
+                <a href="https://github.com/kamini569/harshidhi-water-supply" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <h3>Bibzy Eats</h3>
+
+            <p>
+                Food-related project focused on UI and functionality for online ordering experience.
+            </p>
+
+            <p class="tech">
+                <b>Tech:</b> HTML, CSS
+            </p>
+
+            <div class="btns">
+                <a href="https://github.com/kamini569/Restaurant-Website" target="_blank" class="btn">GitHub</a>
+                <a href="https://kamini569.github.io/Restaurant-Website/" target="_blank" class="btn">Live</a>
+            </div>
+    </div>
+</section>
+
+    <!-- Design Section -->
+<section id="uiux">
+    <h1 class="t-center my-2 t-white f-2">UI/UX Designs</h1>
+
+    <div class="ui-grid">
+
+        <!-- U1 -->
+        <div class="ui-card">
+            <img src="{% static 'images/uev.jpg' %}">
+            <h3>EV Scooter</h3>
+            <a href="https://www.figma.com/design/ELNHGNJUdrOXjw4EZFqquN/kamini-parmar?node-id=0-1&t=2jffX4a11afkLArB-1" target="_blank" class="btn">View</a>
+        </div>
+
+        <!-- U2 -->
+        <div class="ui-card">
+            <img src="{% static 'images/uby.jpg' %}">
+            <h3>Bicycle</h3>
+            <a href="https://www.figma.com/design/ELNHGNJUdrOXjw4EZFqquN/kamini-parmar?node-id=0-1&t=2jffX4a11afkLArB-1" target="_blank" class="btn">View</a>
+        </div>
+
+        <!-- U3 -->
+        <div class="ui-card">
+            <div class="slider">
+                <img src="{% static 'images/usd.jpg' %}" class="slide active">
+                <img src="{% static 'images/ucd.jpg' %}" class="slide">
+                <img src="{% static 'images/ubd.jpg' %}" class="slide">
+
+                <button class="prev">‹</button>
+                <button class="next">›</button>
+            </div>
+
+            <h3>Strawberry Design</h3>
+            <a href="https://www.figma.com/design/ELNHGNJUdrOXjw4EZFqquN/kamini-parmar?node-id=0-1&t=2jffX4a11afkLArB-1" target="_blank" class="btn">View</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!--canva-->
+<section id="canva">
+    <h1 class="t-center my-2 t-white f-2">Canva Designs</h1>
+
+    <div class="canva-grid">
+
+        <!-- C1 RECTANGLE -->
+        <div class="canva-card rect">
+            <img src="{% static 'images/cy.png' %}">
+            <p> </p>
+            <p> .</p>
+            <a href="https://www.linkedin.com/posts/kamini-parmar-0443a6282_canva-posterdesign-designpractice-activity-7401096175065563136-V-nP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAETB1rQBkfkoF9iPUTPKmw62IIIu7N1uS68" target="_blank" class="btn">View</a>
+        </div>
+
+        <!-- C2 SQUARE -->
+        <div class="canva-card square">
+            <img src="{% static 'images/cc.png' %}">
+            <p> </p>
+            <p> .</p>
+            <a href="https://www.linkedin.com/posts/kamini-parmar-0443a6282_canvadesign-activity-7401096457853779968-I83d?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAETB1rQBkfkoF9iPUTPKmw62IIIu7N1uS68" class="btn">View</a>
+        </div>
+
+        <!-- C3 VERTICAL VIDEO -->
+        <div class="canva-card vertical">
+            <video controls>
+                <source src="{% static 'images/cvi.mp4' %}" type="video/mp4">
+            </video>
+            <p>watch</p>
+            <a href="#" class="btn live">Watch</a>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Contact Me Section -->
+ <section id="Contact" class="contact-section">
+
+    <h1 class="contact-title">Contact Me</h1>
+    <p class="contact-subtitle">Let’s build something amazing together 🚀</p>
+
+    <div class="contact-box">
+
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="input-group">
+                <input type="text" name="name" required>
+                <label>Your Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" required>
+                <label>Your Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="number" required>
+                <label>Your Phone</label>
+            </div>
+
+            <div class="input-group">
+                <textarea name="content" rows="5" required></textarea>
+                <label>Your Message</label>
+            </div>
+
+            <button type="submit" class="contact-btn">
+                Send Message
+            </button>
+        </form>
+    </div>
+
+</section>  
+
+    <!-- Footer Section -->
+    <footer id="footer">
+
+    <div class="footer-container">
+
+        <!-- NAME -->
+        <h2 class="footer-logo">Kamini Parmar</h2>
+
+        <!-- LINKS -->
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <!-- SOCIAL -->
+        <div class="footer-social">
+
+            <a href="https://www.linkedin.com/in/kamini569/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/kamini569" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://instagram.com/dreamora_design" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+        <p class="footer-copy">
+            © 2026 Kamini Parmar | All Rights Reserved
+        </p>
+
+    </div>
+
+</footer>
+
+    
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const sliders = document.querySelectorAll(".slider");
+
+    sliders.forEach((slider) => {
+        const slides = slider.querySelectorAll(".slide");
+        const next = slider.querySelector(".next");
+        const prev = slider.querySelector(".prev");
+
+        let index = 0;
+
+        next.addEventListener("click", () => {
+            slides[index].classList.remove("active");
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        });
+
+        prev.addEventListener("click", () => {
+            slides[index].classList.remove("active");
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add("active");
+        });
+    });
+
+});
+</script>
+
+</body> 
+</html>
